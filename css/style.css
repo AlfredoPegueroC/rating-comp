@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
+
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141519;
+}
+
+.card {
+  max-width: 350px;
+  background: white;
+  padding: 20px;
+  background: linear-gradient(50deg, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+  border-radius: 15px;
+}
+
+/* CHANGE LATER */
+.card .rating__state {
+  display: flex; 
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.card .rating__state .icon {
+  background: hsla(213, 20%, 18%, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.card .rating__state img {
+  width: 20px;
+}
+
+.card .title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card .description {
+  color: #ffffff85;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.card .rating__form input {
+  display: none;
+}
+.card .rating__form .rating__value {
+  margin: 20px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card .rating__form .rating__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff85;
+  padding: 25px;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background: #262e38;
+  font-weight: 700;
+}
+.card .rating__form .rating__circle:hover {
+  cursor: pointer;
+  background: hsl(25, 97%, 53%);
+}
+
+.card .rating__form input:checked + .rating__circle {
+  background: hsl(217, 12%, 63%);
+}
+
+.btn {
+  border: 0;
+  background: hsl(25, 97%, 53%);
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border-radius: 40px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover{
+    background: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+/* THANK YOU FOR YOU RATING STATE */
+.Tystate {
+  display: none;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.Tystate .selected__rating{ 
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    margin: 30px 0 40px 0;
+    background: hsla(213, 20%, 18%, 0.568);
+
+}
+.Tystate .description{
+    margin: 20px 0;
+    color: #ffffff85;
+}
